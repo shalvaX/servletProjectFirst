@@ -17,8 +17,6 @@ public class StudentsService extends HttpServlet {
     Student student = new Student();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, ServletException, IOException {
-        req.setAttribute("student",student);
-
         RequestDispatcher view = req.getRequestDispatcher(VIEW);
         view.forward(req, resp);
     }
